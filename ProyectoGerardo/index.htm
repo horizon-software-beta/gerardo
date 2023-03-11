@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    
+    <!--FORMULARIO---->
+    <form class="form" action="conexion.php" name="" method="POST">
+        
+        <!--TITULO------------------------>
+        <h1 class="titulo">Registro</h1>
+        
+        <!--CAJAS-DE-ENTRADA-DE-DATOS------------------------------------------------>
+        <input class="cajas" type="text"  name="nombre" placeholder="Nombre" required>
+        <input class="cajas" type="text" name="apellido" placeholder="Apellido" required>
+        <input class="cajas" type="text" name="usuario" placeholder="Usuario" required>
+        <input class="cajas" type="password" name="contraseña" placeholder="Password" required>
+        
+        <!--BOTON-DE-REGISTRARSE-------------------------->
+        <input
+              type="submit"
+              name="enviar"
+              id="enviar"
+              value="Registrarse"/>
+    </form>
+</body>
+</html>
