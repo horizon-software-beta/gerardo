@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Lo ponemos para el idioma español-->
     <meta charset="UTF-8" />
+    <!-- -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Titulo -->
     <title>Formulario</title>
+    <!--Conexion a la hoja de estilo-->
     <link rel="stylesheet" href="form.css">
 </head>
 <body>
     
     <!--FORMULARIO---->
+    <!--El metodo POST nos sirve para poder-->
     <form class="form" action="conexion.php" name="" method="POST">
         
         <!--TITULO------------------------>
@@ -21,10 +26,12 @@
         <input class="cajas" type="password" name="contraseña" placeholder="Password" required>
         
         <!--BOTON-DE-REGISTRARSE-------------------------->
+        <!--La clase class es el boton 
+            type: envia la informacion recogida de las cajas de entrada de datos
+            value: Es el boton de registrarse-->
         <input
+              class="btn"
               type="submit"
-              name="enviar"
-              id="enviar"
               value="Registrarse"/>
     </form>
 </body>
