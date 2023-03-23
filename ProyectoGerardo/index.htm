@@ -1,19 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Lo ponemos para el idioma español-->
     <meta charset="UTF-8" />
-    <!-- -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Titulo -->
     <title>Formulario</title>
-    <!--Conexion a la hoja de estilo-->
     <link rel="stylesheet" href="form.css">
 </head>
 <body>
     
     <!--FORMULARIO---->
-    <!--El metodo POST nos sirve para poder-->
     <form class="form" action="conexion.php" name="" method="POST">
         
         <!--TITULO------------------------>
@@ -21,17 +16,19 @@
         
         <!--CAJAS-DE-ENTRADA-DE-DATOS------------------------------------------------>
         <input class="cajas" type="text"  name="nombre" placeholder="Nombre" required>
-        <input class="cajas" type="text" name="apellido" placeholder="Apellido" required>
+        <input class="cajas" type="text" name="apellidoP" placeholder="Apellido Paterno" required>
+        <input class="cajas" type="text" name="apellidoM" placeholder="Apellido Materno" required>
+
         <input class="cajas" type="text" name="usuario" placeholder="Usuario" required>
         <input class="cajas" type="password" name="contraseña" placeholder="Password" required>
+        <input class="cajas" type="text" name="telefono" placeholder="Numero de Telefono" required>
         
         <!--BOTON-DE-REGISTRARSE-------------------------->
-        <!--La clase class es el boton 
-            type: envia la informacion recogida de las cajas de entrada de datos
-            value: Es el boton de registrarse-->
         <input
               class="btn"
               type="submit"
+              name="enviar"
+              id="enviar"
               value="Registrarse"/>
     </form>
 </body>
